@@ -1,0 +1,17 @@
+{
+  "name": "creditcharred",
+  "version": "1.0.0",
+  "description": "Utilities for working with credit card form input.",
+  "private": true,
+  "main": "creditcharredtype.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filamentgroup/creditcharred.git"
+  },
+  "author": "zachleat <zachleatherman@gmail.com> (http://zachleat.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/filamentgroup/creditcharred/issues"
+  },
+  "homepage": "https://github.com/filamentgroup/creditcharred#readme"
+}
