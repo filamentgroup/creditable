@@ -9,7 +9,7 @@
 		AMEX: /^3[47]/
 	};
 
-	function CreditCharredType( val ) {
+	function CreditableCardType( val ) {
 		for( var j in types ) {
 			if( !!val.match( types[ j ] ) ) {
 				return j;
@@ -19,12 +19,12 @@
 		return -1;
 	}
 
-	CreditCharredType.TYPES = types;
+	CreditableCardType.TYPES = types;
 
 	if( typeof module !== "undefined" ) {
-		module.exports = CreditCharredType;
+		module.exports = CreditableCardType;
 	} else {
-		w.CreditCharredType = CreditCharredType;
+		w.CreditableCardType = CreditableCardType;
 	}
 
 }( typeof global !== "undefined" ? global : this ));

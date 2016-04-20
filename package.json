@@ -1,9 +1,9 @@
 {
-  "name": "creditcharred",
+  "name": "creditable",
   "version": "1.0.0",
   "description": "Utilities for working with credit card form input.",
   "private": true,
-  "main": "creditcharredtype.js",
+  "main": "creditablecardtype.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/filamentgroup/creditcharred.git"
