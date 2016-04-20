@@ -1,7 +1,7 @@
 # creditable
 Utilities for working with credit card form input.
 
-## CreditCharredType
+## CreditableCardType
 
 ```
 CreditableCardType( "4123 1234 1234 1234" );
