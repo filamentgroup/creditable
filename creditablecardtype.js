@@ -20,11 +20,6 @@
 	}
 
 	CreditableCardType.TYPES = types;
-
-	if( typeof exports === "object" ) {
-		module.exports = CreditableCardType;
-	} else {
-		w.CreditableCardType = CreditableCardType;
-	}
+	w.CreditableCardType = CreditableCardType;
 
 }( typeof global !== "undefined" ? global : this ));
