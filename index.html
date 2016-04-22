@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Creditable Demo</title>
+	<script src="node_modules/shoestring/dist/shoestring.js"></script>
+	<script>
+	window.jQuery = window.shoestring;
+
+	$(function() {
+		$( document ).trigger( "enhance" );
+	});
+	</script>
+	<script src="creditablecardtype.js"></script>
+	<script src="creditablesecuritycode.js"></script>
+</head>
+<body>
+	<form>
+		<label>
+			Credit Card Number
+			<input type="text" data-creditable-creditcard>
+		</label>
+		<label>
+			Security Code
+			<input type="text" data-creditable-securitycode>
+		</label>
+	</form>
+</body>
+</html>
