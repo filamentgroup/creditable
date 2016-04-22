@@ -16,10 +16,12 @@
 		var self = this;
 		this.$creditCard.on( "change", function() {
 			var maxlen = self.getMaxlength();
-			self.$el.attr({
-				maxlength: maxlen,
-				placeholder: self.getPlaceholder( maxlen )
-			});
+			if( maxlen ) {
+				self.$el.attr( "maxlength", maxlen );
+			} else {
+				self.$el.removeAttr( "maxlength" );
+			}
+			self.$el.attr( "placeholder", self.getPlaceholder( maxlen || 4 ) );
 		});
 	}
 
@@ -28,7 +30,8 @@
 	};
 
 	CreditableSecurityCode.prototype.getPlaceholder = function( maxlen ) {
-		return ( new Array( maxlen || this.getMaxlength() ) ).join( "0" ) + "0";
+		var len = maxlen || this.getMaxlength() || 4;
+		return ( new Array( len ) ).join( "0" ) + "0";
 	};
 
 	$(document).on( "enhance", function( e ) {
