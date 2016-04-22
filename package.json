@@ -1,6 +1,6 @@
 {
   "name": "creditable",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Utilities for working with credit card form input.",
   "main": "creditablecardtype.js",
   "repository": {
