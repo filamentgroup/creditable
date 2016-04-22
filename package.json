@@ -1,16 +1,19 @@
 {
   "name": "creditable",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Utilities for working with credit card form input.",
   "main": "creditablecardtype.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/filamentgroup/creditcharred.git"
+    "url": "git+https://github.com/filamentgroup/creditable.git"
   },
   "author": "zachleat <zachleatherman@gmail.com> (http://zachleat.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/filamentgroup/creditcharred/issues"
+    "url": "https://github.com/filamentgroup/creditable/issues"
   },
-  "homepage": "https://github.com/filamentgroup/creditcharred#readme"
+  "homepage": "https://github.com/filamentgroup/creditable#readme",
+  "dependencies": {
+    "shoestring": "^1.0.3"
+  }
 }
