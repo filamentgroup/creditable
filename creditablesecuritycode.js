@@ -15,15 +15,20 @@
 
 		var self = this;
 		this.$creditCard.on( "change", function() {
-			var maxlen = self.getMaxlength();
-			if( maxlen ) {
-				self.$el.attr( "maxlength", maxlen );
-			} else {
-				self.$el.removeAttr( "maxlength" );
-			}
-			self.$el.attr( "placeholder", self.getPlaceholder( maxlen || 4 ) );
+			self.updateSecurityCode();
 		});
+		this.updateSecurityCode();
 	}
+
+	CreditableSecurityCode.prototype.updateSecurityCode = function() {
+		var maxlen = this.getMaxlength();
+		if( maxlen ) {
+			this.$el.attr( "maxlength", maxlen );
+		} else {
+			this.$el.removeAttr( "maxlength" );
+		}
+		this.$el.attr( "placeholder", this.getPlaceholder( maxlen || 4 ) );
+	};
 
 	CreditableSecurityCode.prototype.getMaxlength = function() {
 		return lengths[ CreditableCardType( this.$creditCard.val() ) ];
