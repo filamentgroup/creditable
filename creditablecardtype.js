@@ -3,10 +3,10 @@
 	"use strict";
 
 	var types = {
-		MASTERCARD: /^5[1-5]/,
+		MASTERCARD: /^(2[2-7]|5[1-5])/, // 22-27 and 51-55
 		VISA: /^4/,
-		DISCOVER: /^6(011|5)/,
-		AMEX: /^3[47]/
+		DISCOVER: /^6(011|5)/, // 6011 or 65
+		AMEX: /^3[47]/ // 34 or 37
 	};
 
 	function CreditableCardType( val ) {
