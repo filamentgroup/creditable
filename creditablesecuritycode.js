@@ -12,6 +12,7 @@
 	function CreditableSecurityCode( securityCodeElement ) {
 		this.$el = $( securityCodeElement );
 		this.$creditCard = this.$el.closest( "form" ).find( "[data-creditable-creditcard]" );
+		this.originalMaxlength = parseInt( this.$el.attr( "maxlength" ), 10 );
 
 		var self = this;
 		this.$creditCard.on( "change", function() {
@@ -22,12 +23,8 @@
 
 	CreditableSecurityCode.prototype.updateSecurityCode = function() {
 		var maxlen = this.getMaxlength();
-		if( maxlen ) {
-			this.$el.attr( "maxlength", maxlen );
-		} else {
-			this.$el.removeAttr( "maxlength" );
-		}
-		this.$el.attr( "placeholder", this.getPlaceholder( maxlen || 4 ) );
+		this.$el.attr( "maxlength", maxlen || this.originalMaxlength );
+		this.$el.attr( "placeholder", this.getPlaceholder( maxlen || this.originalMaxLength ) );
 	};
 
 	CreditableSecurityCode.prototype.getMaxlength = function() {
