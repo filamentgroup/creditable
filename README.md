@@ -11,7 +11,7 @@ CreditableCardType( "5123 1234 1234 1234" );
 // returns "MASTERCARD";
 
 CreditableCardType( "6011 1234 1234 1234" );
-// returns "MASTERCARD";
+// returns "DISCOVER";
 
 CreditableCardType( "3412 123456 12345" );
 // returns "AMEX";
