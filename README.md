@@ -24,7 +24,7 @@ CreditableCardType( "3412 123456 12345" );
 
 ## CreditableSecurityCode
 
-Update the Security Code placeholder and maxlength based on the card type of the number entered into the Credit Card field. Full demo in `index.html`.
+Update the Security Code placeholder and maxlength based on the card type of the number entered into the Credit Card field. Supports one pair of fields per form. Full demo in `index.html`.
 
 ```
 <form>
