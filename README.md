@@ -1,4 +1,9 @@
 # creditable
+
+[![npm version](https://badge.fury.io/js/creditable.svg)](https://badge.fury.io/js/creditable)
+[![Build Status](https://img.shields.io/travis/filamentgroup/creditable/master.svg)](https://travis-ci.org/filamentgroup/creditable)
+[![Dependency Status](https://david-dm.org/filamentgroup/creditable.svg?theme=shields.io)](https://david-dm.org/filamentgroup/creditable)
+
 Utilities for working with credit card form input.
 
 ## CreditableCardType
