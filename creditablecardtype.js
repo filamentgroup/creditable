@@ -2,12 +2,25 @@
 (function( w ) {
 	"use strict";
 
-	var types = {
-		MASTERCARD: /^(2[2-7]|5[1-5])/, // 22-27 and 51-55
-		VISA: /^4/,
-		DISCOVER: /^6(011|5)/, // 6011 or 65
-		AMEX: /^3[47]/ // 34 or 37
+	var keys = {
+		MASTERCARD: "MASTERCARD",
+		VISA: "VISA",
+		DISCOVER: "DISCOVER",
+		AMEX: "AMEX"
 	};
+
+	var types = {};
+
+	// 2221-2720 and 51-55
+	types[ keys.MASTERCARD ] = /^(222[1-9]|22[3-9]|2[3-6]|27[01]|2720|5[1-5])/;
+
+	types[ keys.VISA ] = /^4/;
+
+	// 6011 or 65
+	types[ keys.DISCOVER ] = /^6(011|22(12[6-9]|1[3-9]|[2-8]|9[0-1]|92[0-5])|4[4-9]|5)/;
+
+	// 34 or 37
+	types[ keys.AMEX ] = /^3[47]/;
 
 	function CreditableCardType( val ) {
 		for( var j in types ) {
@@ -19,6 +32,7 @@
 		return -1;
 	}
 
+	CreditableCardType.KEYS = keys;
 	CreditableCardType.TYPES = types;
 	w.CreditableCardType = CreditableCardType;
 

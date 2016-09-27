@@ -13,7 +13,15 @@
     "url": "https://github.com/filamentgroup/creditable/issues"
   },
   "homepage": "https://github.com/filamentgroup/creditable#readme",
+  "scripts": {
+    "test": "./node_modules/.bin/grunt test"
+  },
   "dependencies": {
     "shoestring": "^1.0.3"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-qunit": "^1.2.0",
+    "qunitjs": "^2.0.1"
   }
 }
