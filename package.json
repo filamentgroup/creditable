@@ -1,6 +1,6 @@
 {
   "name": "creditable",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Utilities for working with credit card form input.",
   "main": "creditablecardtype.js",
   "repository": {
@@ -17,11 +17,11 @@
     "test": "./node_modules/.bin/grunt test"
   },
   "dependencies": {
-    "shoestring": "^1.0.3"
+    "shoestring": "^2.0.1"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-contrib-qunit": "^1.2.0",
+    "grunt-contrib-qunit": "^2.0.0",
     "qunitjs": "^2.0.1"
   }
 }
