@@ -6,7 +6,8 @@
 		MASTERCARD: "MASTERCARD",
 		VISA: "VISA",
 		DISCOVER: "DISCOVER",
-		AMEX: "AMEX"
+		AMEX: "AMEX",
+		JCB: "JCB"
 	};
 
 	var types = {};
@@ -21,6 +22,9 @@
 
 	// 34 or 37
 	types[ keys.AMEX ] = /^3[47]/;
+
+	// 35
+	types[ keys.JCB ] = /^35/;
 
 	function CreditableCardType( val ) {
 		for( var j in types ) {
