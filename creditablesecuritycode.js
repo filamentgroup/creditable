@@ -6,7 +6,8 @@
 		MASTERCARD: 3,
 		VISA: 3,
 		DISCOVER: 3,
-		AMEX: 4
+		AMEX: 4,
+		JCB: 3
 	};
 
 	function CreditableSecurityCode( securityCodeElement ) {
